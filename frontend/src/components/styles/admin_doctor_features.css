@@ -1,0 +1,109 @@
+.admin-container {
+  background-color: #fff;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 2px;
+}
+
+/* Flex layout for desktop */
+.admin-dropdown-row {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Ensure wrap on smaller widths */
+}
+
+.dropdown-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Table container */
+.admin-features-table {
+  margin-top: 30px;
+  margin-right: 20%;
+}
+
+.admin-feature-modal .ant-modal-title {
+  color: #085cda;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.admin-feature-modal .ant-modal-content {
+  padding-bottom: 0.1rem; /* Reduce from default 24px or more */
+}
+
+.admin-feature-modal .ant-modal-content {
+  max-height: 90vh; /* Limit height to 90% of viewport height */
+  overflow-y: auto;
+  max-width: 500px; /* Enable vertical scroll if needed */
+}
+
+/* Style for the Select inside modal form */
+.admin-form .ant-select {
+  width: 440px;
+}
+
+/* Responsive styles for mobile view (≤ 412px) */
+@media (max-width: 412px) {
+  .admin-container {
+    padding: 1rem;
+  }
+
+  .admin-header h2 {
+    font-size: 20px;
+  }
+
+  .admin-dropdown-row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .dropdown-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .dropdown-group label {
+    flex-shrink: 0;
+    font-size: 16px;
+    min-width: 90px;
+  }
+
+  .admin-features-table {
+    margin-right: 0;
+    overflow-x: auto;
+  }
+
+  .dropdown-group .ant-select {
+    flex-grow: 1;
+  }
+
+  .ant-select {
+    width: 50% !important;
+  }
+
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .ant-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .admin-feature-modal .admin-form .ant-select {
+    width: 100% !important;
+  }
+}

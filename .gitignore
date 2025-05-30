@@ -1,0 +1,59 @@
+# === Backend Ignore (Rails) ===
+
+# Bundler config
+/backend/.bundle
+
+# Environment files
+/backend/.env*
+!/backend/.env*.erb
+
+# Logs and temp files
+/backend/log/*
+/backend/tmp/*
+!/backend/log/.keep
+!/backend/tmp/.keep
+
+# PID files
+/backend/tmp/pids/*
+!/backend/tmp/pids/
+!/backend/tmp/pids/.keep
+
+# Storage and SQLite
+/backend/storage/*
+!/backend/storage/.keep
+/backend/tmp/storage/*
+!/backend/tmp/storage/
+!/backend/tmp/storage/.keep
+
+# Public assets
+/backend/public/assets
+
+# Rails master key
+/backend/config/master.key
+
+# === Frontend Ignore (React) ===
+
+# Dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+
+# Testing
+/frontend/coverage
+
+# Production
+/frontend/build
+
+# Misc
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# === Common Ignore ===
+.vscode/

@@ -1,0 +1,60 @@
+.meta-container {
+  background-color: #fff;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 2px;
+}
+
+.meta-title {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.accordion-header {
+  background-color: #f7f2f2;
+  padding: 12px 16px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+/* Responsive Design for 412px Width Screens */
+@media (max-width: 450px) {
+  .meta-container {
+    padding: 1rem;
+    padding-top: 5px;
+    margin: 0;
+  }
+
+  .meta-title {
+    font-size: 18px;
+  }
+
+  .accordion-header {
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  /* Table responsiveness */
+  .ant-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .ant-table {
+    font-size: 12px;
+    min-width: 360px; /* ensures horizontal scroll if needed */
+  }
+}
